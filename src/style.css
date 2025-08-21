@@ -155,8 +155,58 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 3.5em !important;
+  width: auto !important;
+  transition: all 0.3s ease !important;
+}
+
+.logo:hover {
+  transform: scale(1.05) !important;
+}
+
+/* Achievement Cards Animation */
+.achievement-card {
+  transition: all 0.4s ease !important;
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  box-shadow: 0 15px 30px rgba(192, 132, 245, 0.3) !important;
+  border-color: rgba(192, 132, 245, 0.4) !important;
+}
+
+.animate-in {
+  animation: slideInUp 0.6s ease forwards !important;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0 !important;
+    transform: translateY(30px) !important;
+  }
+  to {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+
+/* Mobile responsiveness for achievement cards */
+@media (max-width: 768px) {
+  .achievement-card {
+    margin-bottom: 15px !important;
+  }
+  
+  .achievement-card .card-body {
+    padding: 20px 10px !important;
+  }
+  
+  .achievement-card .card-title {
+    font-size: 1.1em !important;
+  }
+  
+  .achievement-card .card-text {
+    font-size: 0.85em !important;
+  }
 }
 
 .navbar-nav .nav-link {
@@ -460,17 +510,21 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 8px 15px 5px rgba(119, 53, 136, 0.3) !important;
   color: white !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
+  background: linear-gradient(135deg, rgba(119, 53, 136, 0.1), rgba(168, 85, 247, 0.1)) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(192, 132, 245, 0.2) !important;
+  opacity: 0.95 !important;
+  transition: all 0.4s ease 0s !important;
   height: 100% !important;
+  border-radius: 15px !important;
 }
 .project-card-view:hover {
-  transform: scale(1.02) !important;
+  transform: translateY(-5px) scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 15px 25px 8px rgba(129, 72, 144, 0.4) !important;
+  border-color: rgba(192, 132, 245, 0.4) !important;
 }
 
 .blog-card {
@@ -518,14 +572,20 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background: linear-gradient(135deg, #623686, #a855f7) !important;
+  border: none !important;
+  border-radius: 25px !important;
+  padding: 10px 25px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(98, 54, 134, 0.3) !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background: linear-gradient(135deg, #6d20c5, #c084f5) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(98, 54, 134, 0.4) !important;
 }
 .btn:focus {
   outline: none !important;
@@ -536,6 +596,21 @@ button:focus {
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
+  text-align: center !important;
+  margin-bottom: 30px !important;
+  position: relative !important;
+}
+
+.project-heading::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: -10px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 60px !important;
+  height: 3px !important;
+  background: linear-gradient(90deg, #c084f5, #a855f7) !important;
+  border-radius: 2px !important;
 }
 
 /* --------- */
@@ -553,16 +628,17 @@ button:focus {
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;
-  padding: 10px !important;
+  padding: 15px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 2px solid rgba(200, 137, 230, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
-  border-radius: 5px !important;
+  border-radius: 12px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  box-shadow: 0 8px 20px rgba(89, 4, 168, 0.2) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+  background: linear-gradient(135deg, rgba(200, 137, 230, 0.1), rgba(168, 85, 247, 0.1)) !important;
 }
 
 @media (max-width: 767px) {
@@ -572,9 +648,10 @@ button:focus {
 }
 
 .tech-icons:hover {
-  transform: scale(1.05) !important;
+  transform: translateY(-5px) scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.5px solid rgba(197, 115, 230, 0.883) !important;
+  box-shadow: 0 12px 25px rgba(89, 4, 168, 0.3) !important;
 }
 .tech-icon-images {
   padding: 20px !important;

@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import niatImg from "../../Assets/Projects/NIAT.png";
+import botnetImg from "../../Assets/Projects/Botnet.png";
+import hybnetImg from "../../Assets/Projects/HybNet-HD- IoT DDoS Detection.png";
+import unipoolImg from "../../Assets/Projects/unipool.png";
+import awsImg from "../../Assets/Projects/AWS.png";
+import dashboardImg from "../../Assets/Projects/dashboard.png";
 
 function Projects() {
   return (
@@ -23,68 +23,67 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={niatImg}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="NIAT Dashboard"
+              description="Feedback and reporting platform built with React + TypeScript. Centralized data hub, interactive Power BI dashboards, and automated reporting that reduces manual effort and speeds up decisions."
+              ghLink="https://github.com/charanyarra/niat-dashboard"
+              demoLink="https://niat-datahub.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={botnetImg}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Deep Learning Botnet Detection"
+              description="Hybrid model using GANs, Transformers, and 1D CNNs for botnet detection. Published at ICCCNT 2025 (IIT Indore)."
+              ghLink="https://drive.google.com/drive/u/2/folders/17RYDF5VAXltsQhEAOfHuLzakcWvef8td"
+              demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={hybnetImg}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="HybNet-HD: IoT DDoS Detection"
+              description="Multi-stream CNN + LSTM + attention model for IoT DDoS detection (UNSW-NB15). Published; achieved high accuracy with low false-positive rate."
+              ghLink="https://drive.google.com/drive/u/2/folders/17RYDF5VAXltsQhEAOfHuLzakcWvef8td"
+              demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={unipoolImg}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="UniPool"
+              description="A travel app for college students to find and share rides to and from campus—saving money and effort since the college is far from the city."
+              ghLink=""
+              demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={awsImg}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="AWS WordPress Deployment"
+              description="Deployed WordPress on AWS. Configured EC2, hardened the server, and implemented basic security controls."
+              ghLink=""
+              demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={dashboardImg}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Power BI Dashboards"
+              description="Interactive dashboards for operations at NxtWave. Unified multi-source data, improved accuracy, and enabled faster decision-making."
+              ghLink=""
+              demoLink=""
             />
           </Col>
         </Row>

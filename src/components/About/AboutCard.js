@@ -8,33 +8,34 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            Hi everyone, I'm <span className="purple">Charan Yarra </span>
+            from <span className="purple"> Vijayawada, Andhra Pradesh.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
+            I currently work in the Program Operations team at NxtWave, with hands-on experience in
+            building <span className="purple">Power BI</span> dashboards and
+            driving data-informed operations. Previously worked on
+            <span className="purple"> AI/ML</span> projects including employee
+            burnout prediction and IoT security research.
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
             <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
+            I enjoy solving problems end-to-end — across data, product, and operations.
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Building dashboards and data tools
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Exploring AI/ML and Deep Learning
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Writing and sharing learnings
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Turning curiosity into code and problems into products."{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Charan</footer>
         </blockquote>
       </Card.Body>
     </Card>
